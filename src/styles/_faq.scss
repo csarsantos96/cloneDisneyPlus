@@ -36,6 +36,7 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+                
             }
 
             &--is-open {
@@ -47,6 +48,11 @@
                     height: auto;
                     padding-bottom: 24px;
                     transition: height, .5s ease;
+
+                    li{
+                        list-style: circle;
+                    }
+                    
                 }
             }
         }
