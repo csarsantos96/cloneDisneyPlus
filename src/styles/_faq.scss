@@ -1,17 +1,17 @@
-.faq{
+.faq {
     padding: 5.6vw;
-    
-    h2{
+
+    h2 {
         text-align: center;
         margin-bottom: 24px;
     }
 
-    &__questions{
-        &__item{
+    &__questions {
+        &__item {
             background-color: #13151d;
             margin-bottom: 16px;
 
-            &__question{
+            &__question {
                 color: #fff;
                 font-size: 20px;
                 padding: 24px;
@@ -19,8 +19,8 @@
                 cursor: pointer;
                 position: relative;
 
-                &::after{
-                    content:'+';
+                &::after {
+                    content: '+';
                     position: absolute;
                     top: 0;
                     right: 24px;
@@ -31,20 +31,22 @@
                 }
             }
 
-            &__answer{
+            &__answer {
                 height: 0;
                 overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
             }
 
-            &--is-open{
-
-                .faq__questions__item__question::after{
+            &--is-open {
+                .faq__questions__item__question::after {
                     content: '-';
                 }
-
-                .faq__questions__item__answer{
+                
+                .faq__questions__item__answer {
                     height: auto;
-                    padding: 24px;
+                    padding-bottom: 24px;
+                    transition: height, .5s ease;
                 }
             }
         }
